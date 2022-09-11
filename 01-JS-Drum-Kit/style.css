@@ -31,13 +31,29 @@ body{
     border-radius: 0.8rem;
     border: solid 0.3rem blue;
     margin-top: 2px;
-    width: 100px;
+    width: 110px;
     height: 80%;
+    text-align: center;
+    background-color: grey;
+    transition: all .07s ease;
 
     
 }
 
 kbd{
     color: yellow;
+    font-size: 40px;
+  
 }
 
+span{
+    color: aqua;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: -25px;
+    text-align: center;
+    margin-left: -65px;
+
+}
