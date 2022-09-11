@@ -4,11 +4,40 @@
 }
 
 body{
-    background-image: url("bg.jpg");
-   
 
+  
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 102% 165%;
+   
+}
+.keys{
+  
+    width: 99%;
+    position: relative;
+    display :flex;
+    top: 30vh;
+    height: 20vh;
+    margin: 20vh auto;
+    border:2px solid red;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.key{
+    
+    border-radius: 0.8rem;
+    border: solid 0.3rem blue;
+    margin-top: 2px;
+    width: 100px;
+    height: 80%;
 
     
 }
+
+kbd{
+    color: yellow;
+}
+
