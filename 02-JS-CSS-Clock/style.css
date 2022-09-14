@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    background-color: azure;
+    text-align: center;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+
+.clock {
+    /*background: lightblue;*/
+    border: 12px dotted black;
+    border-radius: 50%;
+    width: 32rem;
+    height: 31rem;
+    padding: 2rem;
+    
+    margin: 18px auto; /*  auto used for move circle in center*/
+  
+}
+.hand{
+    width: 34%;
+    height: 6px;
+    background: black;
+    top: 50%;
+    position: absolute;
+    transform: rotate(595deg);
+    transform-origin: right;
+    transition: all 2.5s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0, 4.48);
+       
+}
+.clock-face {
+    position: relative;
+    width: 145%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
