@@ -1,0 +1,171 @@
+html {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #ffa537 50%, #111 50%);
+    text-align: center;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    /* display: flex;
+    flex: 1; */
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+.clock {
+    /*background: lightblue;*/
+    border: 12px dotted #ffa537;
+    /* border-radius: 50%; */
+    width: 32rem;
+    height: 32rem;
+    padding: 2rem;
+    background: #111;
+    margin: auto;
+    /*  auto used for move circle in center*/
+    transform: translate(-11%, 0%);
+    box-shadow: 0 0 30px 5px black;
+}
+
+.minhand {
+    height: 2%;
+    width: 102%;
+    background: #777;
+    width: 30%;
+    height: 12px;
+    background: whitesmoke;
+    top: 49%;
+    left: 4%;
+    position: absolute;
+    transform: rotate(1020deg);
+    transform-origin: right;
+    transition: all 2.5s;
+    border-radius: 3vmin;
+}
+
+.sechand {
+    width: 34%;
+    height: 6px;
+    background: whitesmoke;
+    top: 50%;
+    right: 65%;
+    position: absolute;
+    transform: rotate(595deg);
+    transform-origin: right;
+    transition: all 2.5s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0, 4.48);
+    border-radius: 3vmin;
+
+}
+
+.hourhand {
+    height: 20%;
+    width: 3%;
+    background: #fff;
+    height: 46%;
+    width: 3%;
+    background: #fff;
+    position: absolute;
+    left: -231px;
+    right: 0;
+    margin: auto;
+    bottom: 49%;
+    z-index: -1;
+    border-radius: 3vmin;
+    transform-origin: bottom;
+}
+
+.clock-face {
+    position: relative;
+    width: 145%;
+    height: 100%;
+    transform: translateY(-3px);
+    /* account for the height of the clock hands */
+
+
+}
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 32px;
+    top: 63%;
+    height: 31px;
+    left: 32%;
+    margin: -75px auto;
+    position: absolute;
+}
+
+/* .number {
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.number1 {
+    top: 29px;
+    right: 324px;
+}
+
+.number2 {
+    top: 111px;
+    right: 243px;
+}
+
+.number3 {
+    top: 240px;
+    right: 208px;
+}
+
+.number4 {
+    top: 370px;
+    right: 243px;
+}
+
+.number5 {
+    top: 466px;
+    right: 338px;
+}
+
+.number6 {
+    top: 506px;
+    right: 468px;
+}
+
+.number7 {
+    top: 470px;
+    right: 614px;
+}
+
+.number8 {
+    top: 369px;
+    right: 723px;
+}
+
+
+.number9 {
+    top: 241px;
+    right: 758px;
+}
+
+.number10 {
+    top: 111px;
+    right: 719px;
+}
+
+
+
+
+.number11 {
+    top: 29px;
+    left: 88px;
+}
+
+.number12 {
+    top: -28px;
+    right: 479px;
+} */
