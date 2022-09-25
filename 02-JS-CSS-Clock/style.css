@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -31,25 +32,25 @@ body {
     border-top-right-radius: 10px;
     transform-origin: bottom;
    /*transform: rotate(45deg);*/
-    transform: translateX(-50%);
+   transform: translateX(-50%);
     transition: all 0.5s;
   
-    transition-timing-function: cubic-bezier(0, 3.17, 0.25, 1);
+   transition-timing-function: cubic-bezier(0, 3.17, 0.25, 1);
 }
 
-.clock .hand.second {
+.clock .hand.second-hand {
     background-color: red;
     width: 2px;
     height: 45%;
 }
 
-.clock .hand.minute {
+.clock .hand.minute-hand {
     background-color: black;
     width: 7px;
     height: 40%;
 }
 
-.clock .hand.hour {
+.clock .hand.hour-hand {
     background-color: black;
     width: 10px;
     height: 35%;
@@ -87,7 +88,7 @@ body {
     position: absolute;
 }
 
-.flipNumber{ transform: rotate(240deg);}
+/*.flipNumber{ transform: rotate(240deg);}*/
 
 .dot1 { transform: rotate(6deg);}
 
@@ -128,4 +129,8 @@ body {
     left: 45%;
     position: absolute;
     color: azure;
+}
+.clock .hand {
+    --rotation: 0;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg))
 }

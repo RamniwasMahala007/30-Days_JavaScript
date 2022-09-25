@@ -1,26 +1,25 @@
-//console.log("Hii it is for checking js file working or not");
-
-const secondHand = document.querySelector('.second');
-const minsHand = document.querySelector('.minute');
-const hourHand = document.querySelector('.hour');
-
-
-
-
 setInterval(setDate, 1000);
-//let i=0;
-function setDate(){
-  //  console.log("ramniwas print ho rha h ya nahi har second par",i++); 
 
-  const currentdate = new Date();
-  //console.log(currentdate)
-  const mysec= currentdate.getSeconds();
- // console.log(mysec)
+const secondHand = document.querySelector('.second-hand');
+const minsHand = document.querySelector('.minute-hand');
+const hourHand = document.querySelector('.hour-hand');
 
- const anglesec = ((mysec/60)*360) + 90;
+function setDate() {
+  const now = new Date();
+  // console.log(now)
 
- secondHand.style.transform = `rotate(${anglesec}deg)`;
+  const seconds = (now.getSeconds() / 60);
+  secondHand.style.setProperty('--rotation', seconds*360);
 
- //console.log(anglesec)   ------->>   these are showing value in degree
- 
+  const mins = ((seconds + now.getMinutes()) / 60);
+  minsHand.style.setProperty('--rotation', mins*360);
+
+  const hours = ((mins + now.getHours())/12)*360;
+  hourHand.style.setProperty('--rotation', hours);
+  //console.log(hourHand);
 }
+
+setDate();
+
+
+
