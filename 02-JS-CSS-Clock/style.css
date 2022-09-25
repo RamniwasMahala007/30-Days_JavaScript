@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -33,7 +33,7 @@ body {
     transform-origin: bottom;
    /*transform: rotate(45deg);*/
    transform: translateX(-50%);
-    transition: all 0.5s;
+     transition: all 0.5s; 
   
    transition-timing-function: cubic-bezier(0, 3.17, 0.25, 1);
 }
@@ -134,3 +134,4 @@ body {
     --rotation: 0;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg))
 }
+
