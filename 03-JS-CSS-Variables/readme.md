@@ -24,3 +24,24 @@ img {
 ```
 - CSS `filter` provides such as `blur`, `bightness` and so on, take a look at it [here](https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 
+- NodeList v.s. Array : NodeList is **NOT** an Array.See the below images of Nodelist and Array which containing prototypes.
+![](nodelist.png)   ![](array.png)
+
+- how to call inputs through js in basic way:-
+```
+console.log(inputs.item(0));
+console.log(inputs.item(1));
+console.log(inputs.item(2));
+```
+- how to call above inputs in advance way:-
+```
+inputs.forEach(function(input){
+    input.addEventListener('change',updatehandle)
+})
+
+function updatehandle()
+{
+    
+    console.log(this);
+}
+```
