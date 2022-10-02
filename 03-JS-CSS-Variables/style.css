@@ -1,3 +1,19 @@
+:root{
+
+  --spacing: 10px;
+  --blur: 10px;
+  --base:#ffc600;
+
+}
+
+img{
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+}
+.h1{
+  color: var(--base);
+}
 body {
     background: #193549;
     color: white;
@@ -9,4 +25,5 @@ body {
   .controls {
     margin-bottom: 50px;
   }
+
   
