@@ -1,0 +1,20 @@
+html {
+    color:rgb(94, 255, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  body{
+    background-image: url(images/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 60px;
+  }
