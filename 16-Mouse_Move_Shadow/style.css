@@ -12,7 +12,7 @@ html {
     background-image: url(images/space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   h1 {
     text-shadow: 10px 10px 0 rgba(0,0,0,1);
